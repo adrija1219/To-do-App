@@ -1,33 +1,42 @@
-# ✅  A Minimalist To-Do App
+# 📝 Modern To-Do App with Real-Time Progress
 
-TaskMaster is a sleek, responsive web application designed to help you organize your daily life. Whether it's a grocery list or a work project, stay on top of your tasks with an intuitive interface.
-
-![Project Preview](https://via.placeholder.com/800x400?text=App+Screenshot+Placeholder)
+A sleek, dark-themed productivity tool built with a focus on visual feedback and user experience. This application allows users to manage their daily tasks while visualizing their completion status through a dynamic progress tracker.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-* **Create & Delete:** Easily add new tasks and remove them once finished.
-* **Task Persistence:** Uses `localStorage` so your tasks stay saved even if you refresh the page.
-* **Filter Options:** View all tasks, only completed ones, or pending items.
-* **Dark Mode:** Toggle between light and dark themes for comfortable viewing.
-* **Responsive Design:** Fully functional on mobile, tablet, and desktop.
+* **Dynamic Progress Bar:** A visual tracker that calculates and displays your completion percentage (e.g., "1 / 3") as you check off items.
+* **Interactive Task Management:**
+    * **Add Tasks:** Quickly add new goals using the dedicated input field and plus (+) button.
+    * **Edit Functionality:** Modify existing tasks instantly using the integrated edit (pencil) icon.
+    * **Delete Tasks:** Remove individual tasks with a single click on the trash icon.
+* **Completion Status:** Toggle tasks as "complete" to trigger a strike-through effect and update the global progress bar.
+* **Empty State Illustration:** A clean, custom vector graphic appears when no tasks are present, maintaining a professional UI even when empty.
+* **Premium Dark UI:** Designed with a deep navy and purple color palette, featuring neon accents for high visibility.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+)
-* **Storage:** LocalStorage API
-* **Icons:** [FontAwesome](https://fontawesome.com/) / [Lucide](https://lucide.dev/)
+* **HTML5:** Semantic layout and task structure.
+* **CSS3:** Custom animations, Flexbox/Grid layouts, and a dark-mode aesthetic.
+* **JavaScript (ES6+):** Logic for DOM manipulation, progress calculation, and task state management.
 
 ---
 
-## 💻 Getting Started
+## 📂 Project Structure
 
-Follow these steps to get a local copy up and running:
+├── index.html       # App structure and progress bar container
 
-### 1. Clone the repository
-```bash
-git clone [https://github.com/yourusername/todo-app.git](https://github.com/yourusername/todo-app.git)
+├── style.css        # Dark theme styles and neon button accents
+
+├── script.js        # Core logic for adding, editing, and tracking tasks
+
+└── Images/          # Contains the "empty state" illustration
+
+
+## 📸 Application Preview
+
+
+<img width="457" height="594" alt="image" src="https://github.com/user-attachments/assets/98c5e6f2-2c6a-47fa-a58f-dca06a9d0368" />
