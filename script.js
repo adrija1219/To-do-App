@@ -19,6 +19,20 @@ document.addEventListener('DOMContentLoaded', ()=>{
         progressBar.style.width = totalTasks? `${(completedTasks / totalTasks) *100}% ` : '0%';
         progresNumbers.textContent = `${completedTasks} / ${totalTasks}`;
     };
+
+    const saveTaskLocalStorage = () => {
+        const tasks = Array.from(taskList.querySelectorAll('li').map(li => ({
+            text: li.querySelector('.checkbox').checked
+        })));
+        localStorage.setItem('tasks', JSON.stringify(tasks));
+    };
+
+    const loadTasksFromLocalStorage = () => {
+        const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+        savedTasks.forEach(({ text, completed}) => addTask(text, completed, false));
+        toggleEmptyState();
+        updateProgress();
+    }
     const addTask=(text, completed = false, checkCompletion= true) => {
         
         const taskText = text || taskInput.value.trim();  //trim method will remove extra space
@@ -56,6 +70,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             editbtn.style.opacity = isChecked ? '0.5' : '1';
             editbtn.style.pointerEvents = isChecked ? 'none' : 'auto';
             updateProgress();
+            saveTaskLocalStorage();
         });
 
 
@@ -65,24 +80,28 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 li.remove();
                 toggleEmptyState();
                 updateProgress(false);
+                saveTaskLocalStorage();
             }
         })
         li.querySelector('.delete-btn').addEventListener('click', () => {
             li.remove();
             toggleEmptyState();
-            updateProgress();    //when all tasks are deleted
+            updateProgress(); 
+            saveTaskLocalStorage();   //when all tasks are deleted
         });
 
         taskList.appendChild(li);
         taskInput.value='';
         toggleEmptyState();
         updateProgress(checkCompletion);
+        saveTaskLocalStorage();
     };
 
     taskForm.addEventListener('submit', (e) => {
         e.preventDefault(); // <--- THIS LINE STOPS THE REFRESH
         addTask();
     });
+    loadTasksFromLocalStorage();
 
     
 })
