@@ -1,0 +1,40 @@
+[33mcommit fc5d915bdbe0d6d0907fb302aecad57de17d29c0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: adrija1219 <itraadrija571@gmail.com>
+Date:   Tue Dec 30 14:29:20 2025 +0530
+
+    Updated file changes
+
+[33mcommit 39393d175d4bb442c33cc2957be5a3d04fd351a9[m
+Merge: b52148d 5f297ee
+Author: adrija1219 <itraadrija571@gmail.com>
+Date:   Mon Dec 29 23:06:41 2025 +0530
+
+    Fix image path and add CSS styling
+
+[33mcommit b52148de185f3d2a310c42428d1f439defb905f6[m
+Author: adrija1219 <itraadrija571@gmail.com>
+Date:   Mon Dec 29 21:35:22 2025 +0530
+
+    fix isuue
+
+[33mcommit 5f297ee7c36c5b7d6b3755f62681bcf411c87a7e[m
+Author: Adrija Mitra <mitraadrija571@gmail.com>
+Date:   Mon Dec 29 20:11:40 2025 +0530
+
+    Revise README for Modern To-Do App
+    
+    Updated the README to reflect the new app name and features, including a dynamic progress bar and interactive task management.
+
+[33mcommit c2b42a9d5fea2d9a4c26ee311983017898c90cea[m
+Author: Adrija Mitra <mitraadrija571@gmail.com>
+Date:   Mon Dec 29 20:00:43 2025 +0530
+
+    Initialize README with project details and setup
+    
+    Added project description, features, tech stack, and setup instructions.
+
+[33mcommit 5f94c946f88df11a16a138fe1c57c8216806666a[m
+Author: adrija1219 <itraadrija571@gmail.com>
+Date:   Mon Dec 29 19:48:39 2025 +0530
+
+    Upload my project
